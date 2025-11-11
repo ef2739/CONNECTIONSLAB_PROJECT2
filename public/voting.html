@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <title>Chat - Single Page</title>
+</head>
+
+<body>
+
+
+    <!-- PART 2: VOTING  -->
+
+    <div class="buttons">
+        <!-- create 6 buttons for each subject-->
+        <div class="interface-lab">
+            <a href="chat.html?room=interface-lab" target="_blank">
+                <!-- target blank etc opens the page in another window             -->
+                <button id="intlab-bttn">interface lab</button>
+            </a>
+        </div>
+
+        <div class="exploratory-making">
+            <a href="chat.html?room=exploratory-making" target="_blank">
+                <button id="expmak-bttn">exploratory making</button>
+            </a>
+        </div>
+
+        <div class="CCC">
+            <a href="chat.html?room=ccc" target="_blank">
+                <!-- target blank etc opens the page in another window     -->
+                <button id="ccc-bttn">concepts, culture & communication</button>
+            </a>
+        </div>
+
+        <div class="conversations-ny">
+            <a href="chat.html?room=conversationsny" target="_blank">
+                <!-- target blank etc opens the page in another window     -->
+                <button id="convny-bttn">conversations NY</button>
+            </a>
+        </div>
+
+        <div class="creative-coding">
+            <a href="chat.html?room=creative-coding" target="_blank">
+                <!-- target blank etc opens the page in another window     -->
+                <button id="crcod-bttn">creative coding</button>
+            </a>
+        </div>
+
+        <div class="connections-lab">
+            <a href="chat.html?room=connections-lab" target="_blank">
+                <!-- target blank etc opens the page in another window     -->
+                <button id="conlab-bttn">connections lab</button>
+            </a>
+        </div>
+
+        <div class="crit-ex">
+            <button id="critex-bttn">critical experience</button>
+        </div>
+
+    </div>
+
+    <!-- create a box with the live voting pool -->
+
+    <div class="voting-feed">
+        <div class="chat-header">Live results</div>
+        <div class="chat-box" id="chat-box-msgs"></div>
+
+    </div>
+
+    <!-- load the socket.io library -->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
