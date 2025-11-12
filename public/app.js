@@ -40,7 +40,7 @@ window.addEventListener('load', function () {
             const count = votes[label] || 0;
             const base = 1;
             const growth = 0.08;
-            const max = 3.2;
+            const max = 1.7;
             const scale = Math.min(base + count * growth, max);
             btn.style.transform = `scale(${scale})`;
         });
